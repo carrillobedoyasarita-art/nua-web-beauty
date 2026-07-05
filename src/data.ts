@@ -41,7 +41,7 @@ export const products: Product[] = [
     category: 'skincare',
     price: 28.00,
     brand: 'Natura',
-    image: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d538?q=80&w=800&auto=format&fit=crop',
+    image: '/src/assets/images/regenerated_image_1783294807194.webp',
   },
   {
     id: '6',
@@ -49,7 +49,7 @@ export const products: Product[] = [
     category: 'esthetics',
     price: 120.00,
     brand: 'Professional Line',
-    image: 'https://images.unsplash.com/photo-1570172619380-6bb04b84c6b7?q=80&w=800&auto=format&fit=crop',
+    image: '/src/assets/images/regenerated_image_1783294807602.jpg',
   }
 ];
 
