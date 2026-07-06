@@ -70,11 +70,9 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled || location.pathname !== '/' ? 'glass py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center group">
-          <img 
-            src="/logo.png" 
-            alt="Logo NUA" 
-            className="h-20 w-auto transition-transform duration-300 group-hover:scale-105"
-          />
+          <span className="font-sans text-3xl md:text-4xl font-semibold tracking-wide text-primary lowercase transition-transform duration-300 group-hover:scale-105 block select-none">
+            nua
+          </span>
         </Link>
 
         {/* Desktop Menu */}
@@ -186,22 +184,22 @@ const Hero = () => (
           </div>
         </motion.div>
 
-        {/* Right Content: Diverse Beauty Image */}
+        {/* Right Content: Skincare Brand Image */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
           className="relative mt-8 lg:mt-0 h-[400px] lg:h-[600px] flex items-center justify-center"
         >
-          {/* Main Diverse Image */}
+          {/* Main Skincare Image */}
           <div className="relative w-full h-full rounded-[3rem] overflow-hidden bg-gray-50 border border-gray-100 shadow-2xl">
             <img 
-              src="/src/assets/images/regenerated_image_1777846406771.png" 
-              alt="Belleza Múltiple y Real NUA" 
+              src="https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=1000&auto=format&fit=crop" 
+              alt="Cuidado de la Piel NUA" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
               onError={(e) => {
-                e.currentTarget.src = "https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?q=80&w=1000";
+                e.currentTarget.src = "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=1000";
               }}
             />
             {/* Subtle overlay for better blending */}
@@ -759,11 +757,9 @@ const Footer = () => (
       <div className="grid md:grid-cols-4 gap-12 mb-16">
         <div className="col-span-2">
           <Link to="/" className="inline-block mb-6 group">
-            <img 
-              src="/logo.png" 
-              alt="Logo NUA" 
-              className="h-24 w-auto transition-transform duration-300 group-hover:scale-105"
-            />
+            <span className="font-sans text-4xl md:text-5xl font-semibold tracking-wide text-primary lowercase transition-transform duration-300 group-hover:scale-105 block select-none">
+              nua
+            </span>
           </Link>
           <p className="text-xl font-display italic text-gray-400 mb-8 max-w-sm">
             “Cuidarte es amarte”. Creamos experiencias de bienestar a través del cuidado personal.

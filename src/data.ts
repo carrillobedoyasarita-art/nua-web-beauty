@@ -41,7 +41,7 @@ export const products: Product[] = [
     category: 'skincare',
     price: 28.00,
     brand: 'Natura',
-    image: '/src/assets/images/regenerated_image_1783294807194.webp',
+    image: '/src/assets/images/regenerated_image_1783294807194.webp'
   },
   {
     id: '6',
