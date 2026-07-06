@@ -441,6 +441,16 @@ const Catalog = () => {
                   alt={product.name} 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const fallbackImages: Record<string, string> = {
+                      makeup: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=800&auto=format&fit=crop',
+                      skincare: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d538?q=80&w=800&auto=format&fit=crop',
+                      haircare: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?q=80&w=800&auto=format&fit=crop',
+                      esthetics: 'https://images.unsplash.com/photo-1570172619380-6bb04b84c6b7?q=80&w=800&auto=format&fit=crop'
+                    };
+                    const category = product.category || 'skincare';
+                    e.currentTarget.src = fallbackImages[category] || fallbackImages.skincare;
+                  }}
                 />
                 <button className="absolute top-4 right-4 p-2 bg-white/80 backdrop-blur-md rounded-full text-secondary opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0">
                   <Heart size={20} />
